@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Blogger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,8 +12,8 @@
 
   <body>
     <ul>
-      <li><%= link_to "Home", welcome_index_path %> </li>
-      <li><%= link_to "About", welcome_index_path %> </li>
+      <li><%= link_to "Home", root_path %> </li>
+      <li><%= link_to "Posts", posts_url %> </li>
     </ul>
 
       <%= yield %>
