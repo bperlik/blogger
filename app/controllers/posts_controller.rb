@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     # create an instance of post using params
     @post = Post.new
     @post.title = params[:post][:title]
-    @post.body = params[:post][:title]
+    @post.body = params[:post][:body]
 
     #if post is saved, flash saved message and redirect to the new post
     #if post is not saved, flash error msg and render new (form)

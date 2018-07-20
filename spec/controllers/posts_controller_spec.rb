@@ -16,13 +16,6 @@ RSpec.describe PostsController, type: :controller do
     end
   end
 
-#  describe "GET #show" do
-#    it "returns http success" do
-#      get :show
-#      expect(response).to have_http_status(:success)
-#    end
-#  end
-
   describe "GET #new" do
     # post returns 200
     it "returns http success" do
@@ -43,12 +36,43 @@ RSpec.describe PostsController, type: :controller do
     end
   end
 
-#  describe "GET #edit" do
-#    it "returns http success" do
-#      get :edit
-#      expect(response).to have_http_status(:success)
-#    end
-#  end
+  describe "POST create" do
+    it "increases the number of Posts by one" do
+      expect{post :create, post: {title: "Test title", body: "Test body"}}.to change(Post, :count).by(1)
+    end
+
+    # assigns the new post data to an instance of post
+    it "assigns the new post to @post" do
+      post :create, post: {title: "Test title", body: "Test body"}
+      expect(assigns(:post)).to eq Post.last
+    end
+
+    # shows the new post after creating it
+    it "redirects to the new post" do
+      post :create, post: {title: "Test title", body: "Test body"}
+      expect(response).to redirect_to Post.last
+    end
+  end
+
+  describe "GET show" do
+    # get id parameter, and passes to the params hash
+    it "returns http success" do
+      get :show, id: my_post.id
+      expect(response).to have_http_status(:success)
+    end
+
+    # expect the show view to render using template
+    it "renders the #show view" do
+      get :show, id: my_post.id
+      expect(response).to render_template :show
+    end
+
+    # expect the post asked for to be assigned to showed post
+    it "assigns my_post to @post" do
+      get :show, id: my_post.id
+      expect(assigns(:post)).to eq(my_post)
+    end
+  end
 
 end
 
