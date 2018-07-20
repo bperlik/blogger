@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
-#  get "posts/index"
-#  get "posts/show"
-#  get "posts/new"
-#  get "posts/edit"
+  mount Whodat::Engine, at: '../whodat'
 
   resources :posts
 

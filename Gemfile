@@ -6,6 +6,9 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 
+# Add Engine for authentication of user
+gem 'whodat', path: '../whodat'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
