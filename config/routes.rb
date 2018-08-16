@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
 
-  mount Whodat::Engine, at: '../whodat'
+  root 'welcome#index'
 
-  resources :posts
+  resources :posts, :only => [:new, :create, :show, :index]
 
   get "welcome/index"
 
-  root 'welcome#index'
+  mount Whodat::Engine, at: '/whodat', :as => 'whodat'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
