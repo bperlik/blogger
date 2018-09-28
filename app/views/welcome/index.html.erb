@@ -1,5 +1,18 @@
-<h1> Welcome to Blogger</h1>
+<%= render partial: "whodat/dashboard/navbar", action: "index" %>
 
-<p> A simple blog app for testing Rails Engines and other Ruby Gems. </p>
-
-
+<section class="hero">
+     
+  <div class="hero-inner">
+    <%= image_tag "whodat/whodat-icon.png", :class => "image_style" %>
+         
+    <h1>WELCOME to Blogger! </h1> <br/>
+    <h2>This basic blog intended to test Ruby Gems.</h2>
+     <br/>
+     <h2> <%= link_to "Posts", posts_url %> </h2>
+    <br/>     
+     <h3>You can use the login navbar through out your Rails application <br/>
+        OR just to get one quick user and session. <br/>
+        Simple signup, login and logout. <br/>
+        Fast and easy, in just few steps. </h3>
+  </div>
+</section>

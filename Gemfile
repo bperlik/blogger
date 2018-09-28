@@ -68,3 +68,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Please save me from all the formating in CSS
+gem "bootstrap", "~>4.0.0"
+gem 'bootstrap_form', ">= 4.0.0.alpha1"

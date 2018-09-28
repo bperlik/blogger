@@ -1,0 +1,113 @@
+hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+   /* Flexbox stuff */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   /* Text styles */
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+ /* Sizing */
+ width: 100vw;
+ height: 100vh;
+ 
+ /* Flexbox stuff */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+ /* Text styles */
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+
+ /* Background styles */
+ background-color: white;
+}
+
+.hero image_style {
+  float: center; 
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.hero h1 {
+  /* Text styles */
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Margins */
+  margin-top: 0em;
+  margin-bottom: .5em;
+}
+
+.hero .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+  
+  /* Padding and margins */
+  padding: .2em;
+  margin-top: .5em; 
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Text style */
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+
+  /* Border styles */
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.hero p {
+
+  /* Text styles */
+  font-size: 1.55em;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+
+  padding: .2rem;
+  margin-top: .2em;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.hero h3 {
+
+  /* Text styles */
+  font-size: 1.2em;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+
+  padding: .5em;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero ul {
+  list-style: none;
+  font-size: 1.2em;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+
+  padding: .5em;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto; 
+}
