@@ -7,7 +7,7 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.0'
 
 # Add Engine for authentication of user
-gem 'whodat', path: '../whodat'
+gem 'whodat'
 
 group :production do
   gem 'pg'
